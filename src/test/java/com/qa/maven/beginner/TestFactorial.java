@@ -1,12 +1,23 @@
 package com.qa.maven.beginner;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 class TestFactorial {
 
+	Factorials facts = new Factorials();
+
 	@Test
-	public void test_FACTORIAL() {
-		Factorials facts = new Factorials();
-		AssertEquals(120, facts.sumFactorial(5));
+	void testFactorial() {
+
+		assertEquals(120, this.facts.sumFactorial(5));
+		assertEquals(720, this.facts.sumFactorial(6));
+		assertEquals(1, this.facts.sumFactorial(1));
+	}
+
+	@Test
+	void testReverseFactorial() {
+		assertEquals(5, this.facts.reverseFactorial(120));
 	}
 }
