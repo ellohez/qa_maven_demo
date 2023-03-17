@@ -1,4 +1,4 @@
-package maven_beginner;
+package com.qa.maven.beginner;
 
 public class MavenBasicClass {
 
