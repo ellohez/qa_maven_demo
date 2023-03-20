@@ -19,17 +19,19 @@ public class Factorials {
 
 	public int reverseFactorial(int x) {
 
-		int sum = x;
-		int i = 1;
+//		TODO - if x = 0 - return 1;
+		double sum = x;
+		int i = 2;
 
-		while (i <= x) {
+		while (i < sum) {
 
-			if (sum % x == 0)
-				sum /= x;
+			if (sum % i == 0.0)
+				sum /= i;
 			else
 				return 0;
 			i++;
 		}
-		return sum;
+
+		return (int) sum / 1;
 	}
 }

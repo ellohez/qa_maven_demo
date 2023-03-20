@@ -19,5 +19,7 @@ class TestFactorial {
 	@Test
 	void testReverseFactorial() {
 		assertEquals(5, this.facts.reverseFactorial(120));
+//		Returns 0 if not a factorial
+		assertEquals(0, this.facts.reverseFactorial(121));
 	}
 }
